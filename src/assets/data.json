@@ -1,0 +1,22 @@
+ [
+    {
+    "empId":"1",
+    "empName":"Anusha",
+    "empSalary":"1000"
+  },
+  {
+    "empId":"2",
+    "empName":"Pavan",
+    "empSalary":"2000"
+  },
+  {
+    "empId":"3",
+    "empName":"Anish",
+    "empSalary":"3000"
+  },
+  {
+    "empId":"4",
+    "empName":"Havisha",
+    "empSalary":"4000"
+  }
+]

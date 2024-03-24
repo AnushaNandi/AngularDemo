@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <th>Employee ID</th>
+        <th>Employee name</th>
+        <th>Employee Salary</th>
+        <th>Edit</th>
+        <th>Delete</th> 
+    </thead>
+    <tbody>
+    <tr  *ngFor="let emp of empDetails; let i=index">
+        <td>{{emp.empId}}</td>
+        <td>{{emp.empName}}</td>
+        <td>{{emp.empSalary}}</td>
+       <td> <button (click)="editEmployee()">Edit</button></td>
+        <td><button (click)="deleteEmployee(i)">Delete</button></td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<div>
+    FORM :
+    <br>
+    <form>
+        <label>Employee ID : </label>
+        <input type="text"><br>
+        <label>Employee Name : </label>
+        <input type="text"><br>
+        <label>Employee Salary : </label>
+        <input type="text"><br>
+        <button>Save</button>
+        <button>Reset</button>
+    </form>
+</div>
+<hr>
+<h2>Displaying the data coming from the local json file</h2>
+<div *ngFor="let emp of empJson;let i =index">
+    The index is {{i}} and the data is {{emp.empId}}, {{emp.empName}} and {{emp.empSalary}}
+</div>

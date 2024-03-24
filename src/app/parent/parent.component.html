@@ -1,0 +1,10 @@
+<label class="first">Enter First Number</label>
+<input class="first" type="number" [(ngModel)]="a"><br>
+
+<label class="second">Enter Second Number</label>
+<input class="second" type="number" [(ngModel)]="b"><br>
+
+<button  [(ngModel)]="parentVar" (click)="add(a,b)">ADD</button>The Result is {{parentVar}}
+<hr>
+<app-child [parentVar]='parentVar' (outVar)="multiply($event)"></app-child><hr>
+The value of f is : {{f}}
